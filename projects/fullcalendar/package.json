@@ -1,6 +1,6 @@
 {
   "name": "@fullcalendar/angular",
-  "version": "4.4.1",
+  "version": "4.4.0",
   "title": "FullCalendar Angular Component",
   "description": "An official FullCalendar component for Angular",
   "keywords": [
@@ -19,8 +19,8 @@
     "fast-deep-equal": "^3.1.1"
   },
   "peerDependencies": {
-    "@angular/core": ">=7.0.0 <9.0.0",
-    "@angular/common": ">=7.0.0 <9.0.0"
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0"
   },
   "engines": {
     "node": ">= 6.9.0",
