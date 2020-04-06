@@ -4,6 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 import allLocales from '@fullcalendar/core/locales-all';
+import './page-styling/with-top-bar.css';
 
 document.addEventListener('DOMContentLoaded', function() {
   var initialLocaleCode = 'zh-cn';
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     weekNumbers: true,
     navLinks: true, // can click day/week names to navigate views
     editable: true,
-    eventLimit: true, // allow "more" link when too many events
+    dayMaxEvents: true, // allow "more" link when too many events
     events: [
       {
         title: 'All Day Event',

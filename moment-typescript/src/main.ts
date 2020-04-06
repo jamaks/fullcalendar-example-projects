@@ -4,6 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 import momentPlugin from '@fullcalendar/moment';
+import './main.css';
 
 document.addEventListener('DOMContentLoaded', function() {
   let calendarEl: HTMLElement = document.getElementById('calendar')!;
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     titleFormat: 'MMMM [!!!] YYYY', // a moment format string
     navLinks: true, // can click day/week names to navigate views
     editable: true,
-    eventLimit: true, // allow "more" link when too many events
+    dayMaxEvents: true, // allow "more" link when too many events
     events: [
       {
         title: 'All Day Event',

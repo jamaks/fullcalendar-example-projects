@@ -4,9 +4,10 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import listPlugin from '@fullcalendar/list';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import resourceTimelinePlugin from '@fullcalendar/resource-timeline';
+import './main.css';
 
 document.addEventListener('DOMContentLoaded', function() {
-  let calendarEl = document.getElementById('calendar');
+  let calendarEl: HTMLElement = document.getElementById('calendar')!;
 
   let calendar = new Calendar(calendarEl, {
     plugins: [ interactionPlugin, dayGridPlugin, listPlugin, timeGridPlugin, resourceTimelinePlugin ],
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonText: '3 day'
       }
     },
-    resourceLabelText: 'Rooms',
+    resourceAreaHeaderContent: 'Rooms',
     resources: [
       { id: 'a', title: 'Auditorium A' },
       { id: 'b', title: 'Auditorium B', eventColor: 'green' },
